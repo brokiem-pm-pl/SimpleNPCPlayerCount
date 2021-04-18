@@ -28,7 +28,7 @@ class Main extends PluginBase implements Listener {
             $updateTicks = 100;
         }
         $this->getScheduler()->scheduleDelayedTask(new ClosureTask(function () use ($updateTicks): void{
-            $slapper = $this->getServer()->getPluginManager()->getPlugin("Slapper");
+            $slapper = $this->getServer()->getPluginManager()->getPlugin("SimpleNPC");
             if($slapper === null){
                 $this->getLogger()->notice("The Slapper plugin is not installed, we are installing it for you.");
                 $this->getLogger()->notice("After the plugin is installed, your server will shutdown - please turn it on again.");
