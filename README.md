@@ -1,5 +1,5 @@
-# SlapperPlayerCount
-Get the amount of players on a world or on a server with SlapperPlayerCount!
+# snpcPlayerCount
+Get the amount of players on a world or on a server with snpcPlayerCount!
 
 **Important:** 2.1.2 brings support for WPC support, which you can either choose to enable or disable in the config. WPC has more features for world querying, check out the plugin by clicking [here](http://poggit.pmmp.io/p/WorldPlayerCount/)
 ## Updates
@@ -17,23 +17,23 @@ Get the amount of players on a world or on a server with SlapperPlayerCount!
 ### 2.0
 - Inital release
 ## Configuring Messages
-If you go to the `plugin_data` folder for SlapperPlayerCount, you will see a config. You can change what the nametag will show for each event with the config.
+If you go to the `plugin_data` folder for SimpleNPCPlayerCount, you will see a config. You can change what the nametag will show for each event with the config.
 ## Usage
 If you are confused, this is the place where you can go for answers. I will show how to use this plugin for getting the amount of players in a world, and the amount of players on a server.
 ### World Usage
 When you have this plugin installed, go in-game and get your hands ready:
 (**Note: The arguments must be on the second line of the plugin!**)
-Type up the command to create a normal slapper like normal, with a name and everything:
+Type up the command to create a normal snpc like normal, with a name and everything:
 
-`/slapper create human MiniGames`
+`/snpc create human MiniGames`
 
 From here, you want to seperate the amount of players from the name, so you would seperate it with the `{line}` tag.
 
-`/slapper create human MiniGames{line}`
+`/snpc create human MiniGames{line}`
 
 Now, since you want to get the amount of players on a world, you want to type in `world` and then the world name, spereated by a `:`.
 
-Example: `/slapper create human MiniGames{line}world:minigames`
+Example: `/snpc create human MiniGames{line}world:minigames`
 ![WorldCommandExample](create_world_slapper.png)
 
 Then you get the amount of players on the world:
@@ -46,17 +46,17 @@ Hope this helped :D
 ### Server Query Usage
 When you have this plugin installed, go in-game and get your hands ready:
 (**Note: The arguments must be on the second line of the plugin!**)
-Type up the command to create a normal slapper like normal, with a name and everything:
+Type up the command to create a normal snpc like normal, with a name and everything:
 
-`/slapper create human Versai`
+`/snpc create human Versai`
 
 From here, you want to seperate the amount of players from the name, so you would seperate it with the `{line}` tag.
 
-`/slapper create human Versai{line}`
+`/snpc create human Versai{line}`
 
 Now, since you want to get the amount of players on a server, you want to type in `server`, server ip, and the server port, spereated by a `:`.
 
-Example: `/slapper create human Versai{line}server:versai.pro:19132`
+Example: `/snpc create human Versai{line}server:versai.pro:19132`
 
 ![ServerCreateExample](create_server_slapper.png)
 
