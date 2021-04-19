@@ -86,7 +86,7 @@ class Main extends PluginBase implements Listener {
                             }else{
                                 $world = $this->getServer()->getLevelByName($server[1]);
                             }
-                            if($world === null){
+                            if(($world === null) || is_string($world)){
                                 $execute = false;
                             }else{
                                 $execute = true;
